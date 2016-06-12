@@ -60,7 +60,7 @@ vector< vector<int> > getAllSubsets(vector<int> set)
 	return subset;
 }
 
-void RecSubsets(string soFar, string rest) {
+void RecSubsets(string soFar , string rest) {
 	for (int i = 0; i < rest.length(); i++) {
 		string next = soFar + rest[i];
 		string remaining = rest.substr(i + 1);
