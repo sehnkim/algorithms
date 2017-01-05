@@ -1,7 +1,7 @@
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
-        int numOfCoins = 0
+        int numOfCoins = 0;
     
         if (amount <= 0)
             return -1;
