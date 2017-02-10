@@ -1,3 +1,6 @@
+Gayle Laakmann McDowell (http://www.gayle.com/)
+
+
 [Github readme cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers)
 
 
