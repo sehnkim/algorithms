@@ -1,5 +1,7 @@
 # Schedule.
 
+Q: how to decide which approach would be the best for a specific problem?
+
 4/13/2017 - back-tracking & dynamic programming & recursion & 'D&C'
 
 4/6/2017 - Dijkstra's algorithm 
