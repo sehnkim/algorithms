@@ -3,7 +3,7 @@
 Q: how to decide which approach would be the best for a specific problem?
 
 4/13/2017 - back-tracking & dynamic programming & recursion & 'D&C' & Greedy
-- good ref: https://leetcode.com/articles/climbing-stairs/#approach-3-dynamic-programming-accepted
+- good ref: https://leetcode.com/articles/climbing-stairs/
 
 4/6/2017 - Dijkstra's algorithm 
 
