@@ -5,7 +5,7 @@ Q: how to decide which approach would be the best for a specific problem?
 - good ref: https://leetcode.com/articles/climbing-stairs/
 - why is this called DP?  https://leetcode.com/problems/house-robber/#/solutions   DP O(N) time, O(1) space with easy to understand explanation
 
-Q: 
+Q: When you worked against a time deadline, didn't have time for all options before making a decision, how much time did you have, and what approach did you take?
 
 Q: longest substring without any repeating characters
 
