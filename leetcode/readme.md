@@ -6,15 +6,15 @@
 	
 	3. [0,0,0,0,0,1]과 같은 경우가 생기므로 0이 아닌 값들을 찾아 swap하는 방법. space O(1), time O(n)
 	
-	'''
-    void moveZeroes(vector<int>& nums) {
-        int i=0, j=0;
-        for (j=0; j<nums.size(); ++j) {
-            if (nums[j] != 0)
-                swap(nums[i++], nums[j]);
-        }
-    }
-	'''
+'''
+void moveZeroes(vector<int>& nums) {
+	int i=0, j=0;
+	for (j=0; j<nums.size(); ++j) {
+		if (nums[j] != 0)
+			swap(nums[i++], nums[j]);
+	}
+}
+'''
 
 	
 
