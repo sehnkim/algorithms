@@ -1,3 +1,7 @@
+- [x] 122 Finish my changes
+- [ ] 3424 Push my commits to GitHub
+- [ ] 434 Open a pull request
+
 - [] 281 Move Zeroes - Array, two pointers.
 - [] 283 Move Zeroes - Array, two pointers.
 	- 새로운 배열을 하나 만들고, 0이 아닌 값을 체크해서 그 값으로 그 배열을 앞에서부터 채우고, 다시 나머지는 0으로 채운다. space O(n), time O(n)
