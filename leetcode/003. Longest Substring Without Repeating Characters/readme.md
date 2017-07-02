@@ -7,6 +7,8 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/#/d
 	* z x y s t u a b c d e b k l m n
 	* a z x b c d e b k x m n
 3. sliding window를 사용해야 하는 것과 char, index를 해쉬 맵에 넣어 사용하면 좋겠다는 생각에까지는 미쳤는데, 이를 정확히 어떻게 구현해야 하는지 생각하는데 실패함.
+4. 이 문제는 결국 start index와 end index를 찾아내는 것이 중요하다. max len를 계속 업데이트하면서 문자간의 중복이 없도록 하는 가장 낮은 왼쪽의 인덱스와 현재 인덱스 (가장 오른쪽 끝)간의 차이를 계속 찾아가는 것이다. 어떻게 보면 생각보다 그렇게 어렵지 않은 문제일 수도 있다.
+
 
 (initial)
 ```
@@ -85,7 +87,7 @@ public class Solution {
         // try to extend the range [i, j]
         for (int j = 0, i = 0; j < n; j++) {
             if (map.containsKey(s.charAt(j))) {
-                i = Math.max(map.get(s.charAt(j)), i); // i: 현재 j까지 반복이 없는 가장 낮은 index.
+                i = Math.max(map.get(s.charAt(j)), i); // i: 현재 j까지 반복이 없는 가장 낮은 index, 즉 end index
             }
             ans = Math.max(ans, j - i + 1);
             map.put(s.charAt(j), j + 1); // j+1: 반복되는 문자의 다음 인덱스

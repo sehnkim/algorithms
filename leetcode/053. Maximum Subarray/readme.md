@@ -1,6 +1,7 @@
 https://leetcode.com/problems/maximum-subarray/#/description
 
 * Tags: Array, DP, D&Q
+
 1. 문제의 유형을 잘 살펴보면 DP로 풀 수 있다는 것을 알아차려야 한다.
 * 의문점: 어떻게 O(n)을 유지하면서 시작점과 끝점을 찾아내는가가 큰 고민이었다. 결국은 DP를 이용해서 시작점이 되는 부분을 계속 끌고 오고, localMax + 현재값을 현재값과 비교하면서 localMax를 계속 업데이트 하는 방식으로 문제 접근. 그리고, 그 localMax는 finalMax에 계속 저장했다.
 * Suppose we've solved the problem for A[1 .. i - 1]; how can we extend that to A[1 .. i]?
