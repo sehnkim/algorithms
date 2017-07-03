@@ -2,10 +2,28 @@
 * Time Complexity: O(n)
 * Space Complexity: O(1)
 
-1. 003. Longest Substring Without Repeating Characters의 경우에는 start index하고 end index를 구하고 그 길이는 계산하는 방식이라면, 이 문제의 경우에는
+1. #3. Longest Substring Without Repeating Characters의 경우에는 start index하고 end index를 구하고 그 길이는 계산하는 방식이었다. 여기서 end index는 현재 index이기 때문에 바로 구할 수 있는 것이고, start index의 경우에는 이미 그 문자가 있었던 경우, 그 문자의 인덱스보다 하나 앞의 인덱스를 구하는 것이다. 그리고서는 ans 중에서 가장 큰 것과 비교하는 방식.
 
-1. 새로운 배열을 하나 만들고, 0이 아닌 값을 체크해서 그 값으로 그 배열을 앞에서부터 채우고, 다시 나머지는 0으로 채운다. space O(n), time O(n)
+if (map.containsKey(s.charAt(j))) {
+    i = Math.max(map.get(s.charAt(j)), i); // i: 현재 j까지 반복이 없는 가장 낮은 index, 즉 end index
+}
+ans = Math.max(ans, j - i + 1);
 
+이 문제에서도 비슷한 방식으로 다룬다. 즉, 현재 값이 음수인 경우, maxProduct와 minProduct를 switch하긴 하지만, 중요한 것은 maxProduct = max(minProduct * A[i], A[i]);과 같이 현재 값에 그 이전값들을 고려한 값과, 그냥 현재값과의 최대값을 구하는 것이다. 즉, 위에서와 같이 현재 값에 대한 어떤 결과가 주어지면 그 결과를 가지고 최대값을 계산하여 local max를 구하는 것이다. 이를 배열의 각 값에 대해 수행한다. 그리고 이러한 local max를 다시 한번 global max와 비교하여 계속해서 global max를 업데이트한다.
+
+if (A[i] < 0)
+{
+		int temp = maxProduct;
+		maxProduct = max(minProduct * A[i], A[i]);
+		minProduct = min(temp * A[i], A[i]);
+}
+maxRes = max(maxRes, maxProduct);
+
+
+2. 이 문제의 특징은 언제 음수가 나오고, 또 다시 음수가 나올지 혹은 안나올지 혹은 0이 나올지 모른다는 것이다. 그래서, 계속  max(minProduct * A[i], A[i]);와 같은 것을 수행하는 이유도 결국 양수와 0만 고려했을 경우 0보다 큰 값을 찾기 위한 것이다.
+
+3. 이 문제의 핵심은 음수가 나왔을때 flip 한다는 것이다.
+4. 그리고 다른 특징은 0이 아닌 이상은 어떻게든 계속 값을 곱해간다는 것이다. 그것이 음수이든 양수이든 상관없이.. 그리고서는 계속 최대값을 찾아 헤멘다.
 
 (initial)
 ```
