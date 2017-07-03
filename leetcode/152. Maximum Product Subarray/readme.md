@@ -31,32 +31,33 @@ maxRes = max(maxRes, maxProduct);
 
 (initial)
 ```
-int maxProduct(vector<int>& nums) {
-		// 0
-		// 1 -2 2	==> 2
-		// -1 -2 -3 ==> 6
+int maxProduct(vector<int>& nums)
+{
+	// 0
+	// 1 -2 2	==> 2
+	// -1 -2 -3 ==> 6
 
-		if (nums.size() == 1)
-				return nums[0];
+	if (nums.size() == 1)
+			return nums[0];
 
-		int gmax;
-		int lmin = nums[0];
-		int lmax = nums[0];
-		gmax = lmax;
+	int gmax;
+	int lmin = nums[0];
+	int lmax = nums[0];
+	gmax = lmax;
 
-		for(int i=1; i<nums.size(); ++i)
-		{
-				if (nums[i] < 0)
-						swap(lmin, lmax);
+	for(int i=1; i<nums.size(); ++i)
+	{
+		if (nums[i] < 0)
+				swap(lmin, lmax);
 
-				//
-				lmax = max(nums[i], lmax * nums[i]);	// 음수가 없더라도, 0이 있는 경우를 고려.
-				lmin = min(nums[i], lmin * nums[i]);
+		//
+		lmax = max(nums[i], lmax * nums[i]);	// 음수가 없더라도, 0이 있는 경우를 고려.
+		lmin = min(nums[i], lmin * nums[i]);
 
-				gmax = max(gmax, lmax);
-		}        
+		gmax = max(gmax, lmax);
+	}        
 
-		return gmax;
+	return gmax;
 }
 ```
 
