@@ -5,7 +5,7 @@ while inside while vs. for
 
 - [ ] 445. Add Two Numbers II
 - [ ] meeting-rooms
-- [ ] 14. Longest Common Prefix
+- [x] 14. Longest Common Prefix
 - [x] 56. Merge Intervals
 - [x] 3. Longest Substring Without Repeating Characters
 - [x] 53. Maximum Subarray
