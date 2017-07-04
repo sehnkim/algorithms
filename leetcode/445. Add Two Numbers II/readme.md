@@ -1,9 +1,9 @@
-### Complexity
+## Complexity
 * Tags: Linked list.
 * Time Complexity: O(n)
 * Space Complexity: O(n)
 
-### Note
+## Note
 1. 처음에는 스택을 3개 이용해서 푸는 방법을 생각했다. 가장 쉬운 방법으로. 하지만, 그것보다는 앞쪽에 넣는 방법 (push front)이 생각보다는 쉬웠다. 오히려 push back을 하려면 head를 return해야 하기 때문에 temp를 필요로해서 오히려 extra code가 필요했다.
 2. 문제는 생각보다 그렇게 어렵지 않았다. 어떻게 하면 순서를 뒤집을 것인가의 문제였는데, 대부분 스택을 이용해서 풀었더라.
 3. 누군가는 reverse list를 먼저 수행하고 풀이를 했는데, 이것도 나쁜 방법은 아닌듯. 결국은 reverse list를 하는데도 O(n)이 소요되기 때문에 O(n) * 3번을 하는 경우에 있어서는 동일함.
@@ -26,7 +26,7 @@
   return list.val == 0 ? list.next : list;
   ```
 
-### Initial code
+## Initial code
 ```
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
 {        
@@ -93,7 +93,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
 }
 ```
 
-### Final code
+## Final code
 ```
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {        
 	stack<int> s1, s2, s3;
