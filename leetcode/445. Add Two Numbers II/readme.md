@@ -8,6 +8,24 @@
 2. 문제는 생각보다 그렇게 어렵지 않았다. 어떻게 하면 순서를 뒤집을 것인가의 문제였는데, 대부분 스택을 이용해서 풀었더라.
 3. 누군가는 reverse list를 먼저 수행하고 풀이를 했는데, 이것도 나쁜 방법은 아닌듯. 결국은 reverse list를 하는데도 O(n)이 소요되기 때문에 O(n) * 3번을 하는 경우에 있어서는 동일함.
 
+4. 해답을 보면 다음과 같은 코드도 있는데, 오히려 코드 읽고, 해석하는데 불편함이 큰거 같다. 코드의 길이는 짧아지지만 carry > 0 인 경우를 따로 고려하는 것이 오히려 보다 명확하다.
+
+  ```
+  int sum = 0;
+  ListNode list = new ListNode(0);
+  while (!s1.empty() || !s2.empty()) {
+      if (!s1.empty()) sum += s1.pop();
+      if (!s2.empty()) sum += s2.pop();
+      list.val = sum % 10;
+      ListNode head = new ListNode(sum / 10);
+      head.next = list;
+      list = head;
+      sum /= 10;
+  }
+
+  return list.val == 0 ? list.next : list;
+  ```
+
 ### Initial code
 ```
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
