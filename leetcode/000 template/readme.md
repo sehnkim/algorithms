@@ -1,18 +1,20 @@
+## Complexity
 * Tags: Array, DP
 * Time Complexity: O(n)
 * Space Complexity: O(1)
 
-1.
-2.
-3.
+## Note
+1. a
+2. b
+3. c
 
-(initial)
+## Initial code
 ```
 void moveZeroes(vector<int>& nums) {
 }
 ```
 
-(final)
+## Final code
 ```
 void moveZeroes(vector<int>& nums) {
 }
