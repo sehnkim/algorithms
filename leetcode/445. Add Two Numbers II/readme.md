@@ -10,21 +10,21 @@
 
 4. 해답을 보면 다음과 같은 코드도 있는데, 오히려 코드 읽고, 해석하는데 불편함이 큰거 같다. 코드의 길이는 짧아지지만 carry > 0 인 경우를 따로 고려하는 것이 오히려 보다 명확하다.
 
-  ```
-  int sum = 0;
-  ListNode list = new ListNode(0);
-  while (!s1.empty() || !s2.empty()) {
-      if (!s1.empty()) sum += s1.pop();
-      if (!s2.empty()) sum += s2.pop();
-      list.val = sum % 10;
-      ListNode head = new ListNode(sum / 10);
-      head.next = list;
-      list = head;
-      sum /= 10;
-  }
+    ```
+    int sum = 0;
+    ListNode list = new ListNode(0);
+    while (!s1.empty() || !s2.empty()) {
+        if (!s1.empty()) sum += s1.pop();
+        if (!s2.empty()) sum += s2.pop();
+        list.val = sum % 10;
+        ListNode head = new ListNode(sum / 10);
+        head.next = list;
+        list = head;
+        sum /= 10;
+    }
 
-  return list.val == 0 ? list.next : list;
-  ```
+    return list.val == 0 ? list.next : list;
+    ```
 
 ### Initial code
 ```
