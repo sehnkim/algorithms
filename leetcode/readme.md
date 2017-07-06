@@ -8,10 +8,12 @@ while inside while vs. for
 - [ ] virtual memory 설명해봐
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
-- [ ] 445. Add Two Numbers II
+
+- [x] 235. Lowest Common Ancestor of a Binary Search Tree
+- [x] 445. Add Two Numbers II
 - [ ] meeting-rooms
 - [x] 56. Merge Intervals
-- [ ] 152. Maximum Product Subarray
+- [x] 152. Maximum Product Subarray
 - [x] 53. Maximum Subarray
 - [x] 283. Move Zeroes
 
