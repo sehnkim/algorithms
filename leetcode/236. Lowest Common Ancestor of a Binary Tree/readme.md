@@ -6,9 +6,10 @@
 ## Note
 1. It's recursive and expands the meaning of the function. If the current (sub)tree contains both p and q, then the function result is their LCA. If only one of them is in that subtree, then the result is that one of them. If neither are in that subtree, the result is null.
 https://discuss.leetcode.com/topic/18561/4-lines-c-java-python-ruby/78
-즉, 현재 노드가 p, q를 양쪽을 가지고 있다면, 그게 답이다. 그렇지 않고, subtree에 p, q중에 한개만 가지고 있다면 그 노드는 그게 그 결과일 것이다. 그렇지 않고, 어떤 노드가 p, q 아무것도 가지고 있지 않다며, 그 결과는 NULL이다.
 
-2. 결국은 각 노드에서 p와 q가 있는 있는지를 체크하는 것이다. 그리고, 노드를 현재 시점까지 못 찾았다면 NULL을 계속 return하게 되며, p와 q 중에 하나를 찾았다면 그것을 상위 노드까지 계속 가지고 다니는 꼴이 된다. 그러다가, 어느 노드에서는 오른쪽으로부터 올라온 p 또는 q값과 결국에는 만나게 될 것이며, 이때가 LCA를 찾게 되는 순간이다.
+2. 즉, 현재 노드가 p, q를 양쪽을 가지고 있다면, 그게 답이다. 그렇지 않고, subtree에 p, q중에 한개만 가지고 있다면 그 노드는 그게 그 결과일 것이다. 그렇지 않고, 어떤 노드가 p, q 아무것도 가지고 있지 않다며, 그 결과는 NULL이다.
+
+3. 결국은 각 노드에서 p와 q가 있는 있는지를 체크하는 것이다. 그리고, 노드를 현재 시점까지 못 찾았다면 NULL을 계속 return하게 되며, p와 q 중에 하나를 찾았다면 그것을 상위 노드까지 계속 가지고 다니는 꼴이 된다. 그러다가, 어느 노드에서는 오른쪽으로부터 올라온 p 또는 q값과 결국에는 만나게 될 것이며, 이때가 LCA를 찾게 되는 순간이다.
 
 
 
