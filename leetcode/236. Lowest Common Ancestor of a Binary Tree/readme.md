@@ -12,9 +12,6 @@ https://discuss.leetcode.com/topic/18561/4-lines-c-java-python-ruby/78
 3. 결국은 각 노드에서 p와 q가 있는 있는지를 체크하는 것이다. 그리고, 노드를 현재 시점까지 못 찾았다면 NULL을 계속 return하게 되며, p와 q 중에 하나를 찾았다면 그것을 상위 노드까지 계속 가지고 다니는 꼴이 된다. 그러다가, 어느 노드에서는 오른쪽으로부터 올라온 p 또는 q값과 결국에는 만나게 될 것이며, 이때가 LCA를 찾게 되는 순간이다.
 
 
-
-
-
 ## Initial code
 ```
 TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
