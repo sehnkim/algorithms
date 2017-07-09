@@ -1,25 +1,3 @@
-## Complexity
-* Tags: Array, DP
-* Time Complexity: O(n)
-* Space Complexity: O(1)
-
 ## Note
-1. a
-2. b
-3. c
-
-## Initial code
-```
-void moveZeroes(vector<int>& nums) {
-}
-```
-
-## Final code
-```
-void moveZeroes(vector<int>& nums) {
-}
-```
-
-C | Java
--|-
-test | fda
+- 가상 메모리는 무엇인가?
+실제 메모리가 아니다. 실제 메모리가 다 없어져서 더이상 메

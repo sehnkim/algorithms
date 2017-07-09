@@ -18,6 +18,6 @@ void moveZeroes(vector<int>& nums) {
 }
 ```
 
----------------
-stack | test
----------------
+unordered_map | | | |
+- | - | -| -
+hash.find(c) | ||
