@@ -8,7 +8,7 @@ while inside while vs. for
 - [ ] virtual memory 설명해봐
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
-- [ ] 322. Coin Change [gitbub](322. Coin Change/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
+- [ ] 322. Coin Change [gitbub](stl/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
 - [x] 236. Lowest Common Ancestor of a Binary Tree
 - [x] 235. Lowest Common Ancestor of a Binary Search Tree
 - [x] 445. Add Two Numbers II
