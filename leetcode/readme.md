@@ -1,6 +1,6 @@
 while inside while vs. for
 
-(Skiena's Algorithms Lectures)[http://www3.cs.stonybrook.edu/~algorith/video-lectures/]
+[Skiena's Algorithms Lectures](http://www3.cs.stonybrook.edu/~algorith/video-lectures/)
 
 
 - [ ] web browser로 google.com에 접속했을때 운영체제, 네트워크에서 벌어지는 모든 일들을 설명해봐
@@ -8,7 +8,7 @@ while inside while vs. for
 - [ ] virtual memory 설명해봐
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
-- [ ] 322. Coin Change (Link)[https://leetcode.com/problems/coin-change/#/description]
+- [ ] 322. Coin Change [gitbub](322. Coin Change/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
 - [x] 236. Lowest Common Ancestor of a Binary Tree
 - [x] 235. Lowest Common Ancestor of a Binary Search Tree
 - [x] 445. Add Two Numbers II
