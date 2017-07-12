@@ -22,6 +22,12 @@ for (int i=0; i < coins.size(); ++i) {
 }
 ```
 
+6. 동일한 Complexity를 갖는 경우였지만, Recursive solution보다는 iterative solution이 훨씬 빨리 동작함.
+
+7. Bottom-up approach: 각 액수에 대해 최소 코인의 개수를 작은 것들로 부터 시작해서 계속 추적해 가는 과정. 하지만, coins=[4], amount=3와 같이 amount를 coins으로 fit할 수 없는 경우들이 생기는데, 이런 경우 때문에 return dp[amount] > amount ? -1 : dp[amount];이 필요함.
+
+8. Top-down approach: 찾으려는 값을 입력으로 해서 Recursive 방식으로 최소값을 찾아나가는 과정.
+
 ## Initial code
 ```
 int coinChange(vector<int>& coins, int amount) {
@@ -89,5 +95,19 @@ int coinChange(vector<int>& coins, int& amount, int* dp)
 
 	dp[amount-1] = (min_nums == INT_MAX)? -1 : min_nums;
 	return dp[amount-1];
+}
+```
+
+```
+int coinChange(vector<int>& coins, int amount) {        
+	vector<int> dp(amount+1, amount+1);
+	dp[0] = 0;
+
+	for (int i=1; i<=amount; ++i)
+		for (int j=0; j<coins.size(); ++j)
+			if (coins[j] <= i)   // 현재 코인이 총액보다는 작아야.
+				dp[i] = min(dp[i], dp[i-coins[j]]+1); // https://leetcode.com/articles/coin-change/ 참조. 결국은 현재 액수에 대해 최소 코인의 개수를 찾는 과정.
+
+	return dp[amount] > amount ? -1 : dp[amount];
 }
 ```
