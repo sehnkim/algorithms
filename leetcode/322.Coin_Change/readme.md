@@ -105,8 +105,8 @@ int coinChange(vector<int>& coins, int amount) {
 
 	for (int i=1; i<=amount; ++i)
 		for (int j=0; j<coins.size(); ++j)
-			if (coins[j] <= i)   // 현재 코인이 총액보다는 작아야.
-				dp[i] = min(dp[i], dp[i-coins[j]]+1); // https://leetcode.com/articles/coin-change/ 참조. 결국은 현재 액수에 대해 최소 코인의 개수를 찾는 과정.
+			if (coins[j] <= i)   
+				dp[i] = min(dp[i], dp[i-coins[j]]+1);
 
 	return dp[amount] > amount ? -1 : dp[amount];
 }
@@ -118,8 +118,10 @@ int coinChange(vector<int>& coins, int amount) {
 
     for (int i=1; i<=amount; ++i)
         for (int j=0; j<coins.size(); ++j)
-            if (coins[j] <= i)
+            if (coins[j] <= i)  // 현재 코인이 총액보다는 작아야.
                 dp[i] = min(dp[i], dp[i-coins[j]]+1);
+                // https://leetcode.com/articles/coin-change/ 참조.
+                // 결국은 현재 액수에 대해 최소 코인의 개수를 찾는 과정.
 
     return dp[amount] > amount ? -1 : dp[amount];        
 }
