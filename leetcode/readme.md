@@ -22,10 +22,19 @@ while inside while vs. for
 - [ ] meeting-rooms
 
 - [x] 56. Merge Intervals
+[gitbub](056.Merge_Intervals/readme.md)  -  [leetcode](https://leetcode.com/problems/merge-intervals/#/description)
 
 - [x] 152. Maximum Product Subarray
+[gitbub](152.Maximum_Product_Subarray/readme.md)  -  [leetcode](https://leetcode.com/problems/maximum-product-subarray/#/description)
 
 - [x] 53. Maximum Subarray
+[gitbub](053.Maximum_Subarray/readme.md)  -  [leetcode](https://leetcode.com/problems/maximum-subarray/#/description)
+
 - [x] 283. Move Zeroes
+[gitbub](283.Move_Zeroes/readme.md)  -  [leetcode](https://leetcode.com/problems/move-zeroes/#/description)
+
 - [x] 14. Longest Common Prefix
+[gitbub](014.Longest_Common_Prefix/readme.md)  -  [leetcode](https://leetcode.com/problems/longest-common-prefix/#/description)
+
 - [x] 3. Longest Substring Without Repeating Characters
+[gitbub](003.Longest_Substring_Without_Repeating_Characters/readme.md)  -  [leetcode](https://leetcode.com/problems/longest-substring-without-repeating-characters/#/description)
