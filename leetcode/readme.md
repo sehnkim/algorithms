@@ -8,14 +8,23 @@ while inside while vs. for
 - [ ] virtual memory 설명해봐
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
+- [ ] 230. Kth Smallest Element in a BST [gitbub](230.Kth_Smallest_Element_in_a_BST/readme.md)  -  [leetcode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/#/description)
+
 - [ ] 322. Coin Change [gitbub](322.Coin_Change/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
+
 - [x] 236. Lowest Common Ancestor of a Binary Tree [gitbub](236.Lowest_Common_Ancestor_of_a_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/#/description)
+
 - [x] 235. Lowest Common Ancestor of a Binary Search Tree [gitbub](235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/#/description)
+
 - [x] 445. Add Two Numbers II
 [gitbub](445.Add_Two_Numbers_II/readme.md)  -  [leetcode](https://leetcode.com/problems/add-two-numbers-ii/#/description)
+
 - [ ] meeting-rooms
+
 - [x] 56. Merge Intervals
+
 - [x] 152. Maximum Product Subarray
+
 - [x] 53. Maximum Subarray
 - [x] 283. Move Zeroes
 - [x] 14. Longest Common Prefix
