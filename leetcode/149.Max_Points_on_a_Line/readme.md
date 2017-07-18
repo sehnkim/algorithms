@@ -12,7 +12,7 @@
 
 4. 이렇게 한 점을 중심으로 기울기가 동일한 것 중에 가장 큰 것을 찾는다. 그리고 이를 다른 점에 대해서도 동일하게 적용해서 그러면 결과중에 가장 큰 것을 찾는다.
 
-5. 한가지 중요한 것은 x, y의 차이가 동일해서 duplicate point가 있을 수 있다는 것이다. 
+5. 한가지 중요한 것은 x, y의 차이가 동일해서 duplicate point가 있을 수 있다는 것이다.
 
 ## Initial code
 ```
@@ -23,39 +23,39 @@
 ```
 int maxPoints(vector<Point> &points)
 {
-		if (points.size()<=2) return points.size();
+	if (points.size()<=2) return points.size();
 
-		map<int,map<int,int> > map;
-		int result=0;
+	map<int,map<int,int> > map;
+	int result=0;
 
-		for (unsigned int i=0;i<points.size();i++){
-			map.clear();
-			int localmax=0,overlap=0;
-			for (unsigned int j=i+1;j<points.size();j++){
-				int x=points[j].x-points[i].x;
-				int y=points[j].y-points[i].y;
-				//check overlap
-				if (x==0&&y==0){
-					overlap++;
-					continue;
-				}
-				int gcd=generateGCD(x,y);
-				if (gcd!=0){
-					x /= gcd;
-					y /= gcd;
-				}
-				//find x,then y;
-				int curr = ++map[x][y];
-				localmax = max(curr, localmax);
+	for (unsigned int i=0;i<points.size();i++){
+		map.clear();
+		int localmax=0,overlap=0;
+		for (unsigned int j=i+1;j<points.size();j++){
+			int x=points[j].x-points[i].x;
+			int y=points[j].y-points[i].y;
+			//check overlap
+			if (x==0&&y==0){
+				overlap++;
+				continue;
 			}
-			result = max(result, localmax+overlap+1); // +1: point itself.
+			int gcd=generateGCD(x,y);
+			if (gcd!=0){
+				x /= gcd;
+				y /= gcd;
+			}
+			//find x,then y;
+			int curr = ++map[x][y];
+			localmax = max(curr, localmax);
 		}
-		return result;
+		result = max(result, localmax+overlap+1); // +1: point itself.
 	}
+	return result;
+}
 
-  // Greatest Common Divider
-	int generateGCD(int a, int b)
-  {
-		return b==0? a : generateGCD(b, a%b);
-	}
+// Greatest Common Divider
+int generateGCD(int a, int b)
+{
+	return b==0? a : generateGCD(b, a%b);
+}
 ```
