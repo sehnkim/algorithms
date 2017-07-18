@@ -18,6 +18,12 @@ i: left (runner-up), j: right (first)
 
 string a = "abc";
 a[0]: 'a'
-a[4]: can't do this. 
+a[4]: can't do this.
 
 
+- [ ] map
+  - unordered_map<char, int> map;
+  ```  
+  map['c'] = 1;
+  map['c'] = 2; // latest one is stored
+  ```    
