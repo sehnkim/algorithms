@@ -43,7 +43,12 @@ while inside while vs. for
 - [ ] virtual memory 설명해봐
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
+
+
+- [ ] 297. Serialize and Deserialize Binary Tree [gitbub](297.Serialize_and_Deserialize_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description)
+
 - [ ] 149. Max Points on a Line [gitbub](149.Max_Points_on_a_Line/readme.md)  -  [leetcode](https://leetcode.com/problems/max-points-on-a-line/#/description)
+
 - [ ] 230. Kth Smallest Element in a BST [gitbub](230.Kth_Smallest_Element_in_a_BST/readme.md)  -  [leetcode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/#/description)
 
 - [ ] 322. Coin Change [gitbub](322.Coin_Change/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
