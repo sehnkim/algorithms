@@ -44,7 +44,7 @@ while inside while vs. for
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
 
-- [ ] 167. Two Sum II - Input array is sorted [gitbub](167_Two_Sum_II_Input_array_is_sorted/readme.md)  -  [leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/#/description)
+- [x] 167. Two Sum II - Input array is sorted [gitbub](167_Two_Sum_II_Input_array_is_sorted/readme.md)  -  [leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/#/description)
 
 - [ ] 297. Serialize and Deserialize Binary Tree [gitbub](297.Serialize_and_Deserialize_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description)
 
