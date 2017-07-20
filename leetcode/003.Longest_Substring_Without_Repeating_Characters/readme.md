@@ -87,23 +87,26 @@ globalMax
 ## Final code
 
 ```
-int lengthOfLongestSubstring(string s) {
-		int begin = 0;
-		unordered_map<char, int> map;
-		int len, localMax = 0;
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int begin = 0;
+        unordered_map<char, int> map;
+        int len, localMax = 0;
 
-		for (int j=0; j<s.size(); j++) {
-				char c = s[j];
+        for (int j=0; j<s.size(); j++) {
+            char c = s[j];
 
-				if (map.find(c) != map.end())
-						begin = max(begin, map[c] + 1);
-				map[c] = j;
-				len = j - begin + 1;
-				localMax = max(localMax, len);                
-		}
+            if (map.find(c) != map.end())
+                begin = max(begin, map[c] + 1);
+            map[c] = j;
+            len = j - begin + 1;
+            localMax = max(localMax, len);                
+        }
 
-		return localMax;
-}
+        return localMax;
+    }
+};
 ```
 
 ```
