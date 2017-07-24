@@ -44,6 +44,13 @@ while inside while vs. for
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
 
+
+- [ ] 28. Implement strStr() : 크게 어렵지 않았던 문제. KMP 문제이긴 하지만, 그렇게 풀기에는 너무 어려운 문제. 그렇다면 brute-force 문제로 풀어야 하는데 어떻게 하면 조건을 잘 설정할 것인가의 문제.
+
+- [ ] 349. Intersection of Two Arrays - 이런 경우에는 굳이 해쉬를 이용지 않고, set을 이용하는 것이 좋다. unordered_set<int> m(nums1.begin(), nums1.end()); 참고.
+
+- [ ] 350. Intersection of Two Arrays II - array를 메모리에서 바로 엑세스 할 수 없을 경우에는 merge sort등을 이용해서 두 행렬을 정렬한 후에 two pointer를 이용해서 액세스하면서 intersection을 찾는다. 그렇지 않으면 헤쉬 테이블을 이용해서 간단하게 해결 가능. 
+
 - [ ] 167. Two Sum II - Input array is sorted [gitbub](167_Two_Sum_II_Input_array_is_sorted/readme.md)  -  [leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/#/description)
 
 - [ ] 297. Serialize and Deserialize Binary Tree [gitbub](297.Serialize_and_Deserialize_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description)
