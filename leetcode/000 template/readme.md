@@ -1,9 +1,9 @@
 ## Complexity
-* Difficulty: hard
-* Tags: Tree, Design
+* Difficulty:
+* Tags:
 * Time Complexity: O(n)
 * Space Complexity: O(1)
-* New functions: std::to_string, std::stoi, stringstream, getline
+* New functions:
 
 ## Note
 1. a
