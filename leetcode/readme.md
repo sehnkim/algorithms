@@ -56,6 +56,10 @@ while inside while vs. for
 
 - [ ] reverse the linked list.
 
+
+
+- [ ] 209. Minimum Size Subarray Sum [gitbub](209_Minimum_Size_Subarray_Sum/readme.md)  -  [leetcode](https://leetcode.com/problems/minimum-size-subarray-sum/#/description)
+
 - [ ] 234. Palindrome Linked List [gitbub](234_Palindrome_Linked_List/readme.md)  -  [leetcode](https://leetcode.com/problems/palindrome-linked-list/#/description)
 
 - [ ] 532. K-diff Pairs in an Array: + 와 -를 서로 다르게 고려하던지, 아니면 정렬을 하게 되면 +/-를 고려안하는 식으로 생각을 했는데, +만을 고려해도 충분하다는 것을 알았음. 그리고 two pointers를 사용하려면 정렬을 우선 해야함. 정렬하지 않으면 결국에는 O(n^2)이 요구됨.
