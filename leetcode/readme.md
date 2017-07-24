@@ -1,11 +1,20 @@
+The length of the array won't exceed 10,000.
+All the integers in the given input belong to the range: [-1e7, 1e7].
+
+
+
 - [ ] key techniques
   - sliding window
   - two pointers
-  - hashtable
+  - hashtable or set or array (세 가지를 잘 생각해서 간단한 방법으로)
   - DP
   - Greedy
   - backtracking
   - divide and conquer
+  - sort (56. Merge Intervals)
+  - 결국은 반복되는 문제들은 헤쉬(혹은 셋)으로.
+
+
 
 - [ ] 25 Problems
   - Graph search: 3
@@ -38,18 +47,25 @@ while inside while vs. for
 [Skiena's Algorithms Lectures](http://www3.cs.stonybrook.edu/~algorith/video-lectures/)
 
 
+
 - [ ] web browser로 google.com에 접속했을때 운영체제, 네트워크에서 벌어지는 모든 일들을 설명해봐
 - [ ] 프로그램이 execution될때 무슨 일이 일어나는지 Stack과 heap과 관련해서 설명해봐
 - [ ] virtual memory 설명해봐
 - [ ] Java가 C에 비해서 왜 느린지 설명해봐
 
+- [ ] reverse the linked list.
 
+- [ ] 532. K-diff Pairs in an Array: + 와 -를 서로 다르게 고려하던지, 아니면 정렬을 하게 되면 +/-를 고려안하는 식으로 생각을 했는데, +만을 고려해도 충분하다는 것을 알았음. 그리고 two pointers를 사용하려면 정렬을 우선 해야함. 정렬하지 않으면 결국에는 O(n^2)이 요구됨.
+
+- [ ] 88. Merge Sorted Array : 병합 정렬과 동일한 방법으로 해결. (미리 정렬되어 있음)
+
+- [ ] 345. Reverse Vowels of a String : 모음이 아니면 인덱스를 하나씩 움직이는 것까지는 좋았는데, swap을 한 후에 다시 한번 움직여서 모음이 아닌 것을 찾아야 한다. 그리고, ++i, --j를 계속 하다보면 순서가 바꿔지는 지점이 생기는데 이때 미리 break를 해서 끝내야 한다. 그렇지 않으면 예상치 못한 곳에서 swap을 다시 한번 한다. (한 행렬에서 특정 문자들을 찾음)
 
 - [ ] 28. Implement strStr() : 크게 어렵지 않았던 문제. KMP 문제이긴 하지만, 그렇게 풀기에는 너무 어려운 문제. 그렇다면 brute-force 문제로 풀어야 하는데 어떻게 하면 조건을 잘 설정할 것인가의 문제.
 
 - [ ] 349. Intersection of Two Arrays - 이런 경우에는 굳이 해쉬를 이용지 않고, set을 이용하는 것이 좋다. unordered_set<int> m(nums1.begin(), nums1.end()); 참고.
 
-- [ ] 350. Intersection of Two Arrays II - array를 메모리에서 바로 엑세스 할 수 없을 경우에는 merge sort등을 이용해서 두 행렬을 정렬한 후에 two pointer를 이용해서 액세스하면서 intersection을 찾는다. 그렇지 않으면 헤쉬 테이블을 이용해서 간단하게 해결 가능. 
+- [ ] 350. Intersection of Two Arrays II - array를 메모리에서 바로 엑세스 할 수 없을 경우에는 merge sort등을 이용해서 두 행렬을 정렬한 후에 two pointer를 이용해서 액세스하면서 intersection을 찾는다. 그렇지 않으면 헤쉬 테이블을 이용해서 간단하게 해결 가능.
 
 - [ ] 167. Two Sum II - Input array is sorted [gitbub](167_Two_Sum_II_Input_array_is_sorted/readme.md)  -  [leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/#/description)
 
