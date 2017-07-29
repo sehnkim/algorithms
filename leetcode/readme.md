@@ -7,13 +7,33 @@ All the integers in the given input belong to the range: [-1e7, 1e7].
 - [ ] key techniques
   - sliding window
   - two pointers
-  - hashtable or set or array (세 가지를 잘 생각해서 간단한 방법으로)
+  - hashtable or set or array (세 가지를 잘 생각해서 간단한 방법으로):
   - DP
   - Greedy
   - backtracking
   - divide and conquer
   - sort (56. Merge Intervals)
   - 결국은 반복되는 문제들은 헤쉬(혹은 셋)으로.
+
+techniques | 언제 | 예
+- |-|-|-
+hash | 반복되는 문자열, 숫자 등, 순서 상관없을때| permutation
+sort | |
+sliding window | |
+two pointers | |
+hashtable or set or array  | |
+DP | |
+Greedy | |
+backtracking | |
+divide and conquer | |
+sort | |
+binary search  | 순서가 정렬되어 있을때 |
+localMin | min(localMin, j - i + 1) |
+localMax | min(localMax, j - i + 1) |
+Characters | lower case, Upper case, ASCII, Unicode |
+
+
+
 
 
 
@@ -56,11 +76,11 @@ while inside while vs. for
 
 - [ ] reverse the linked list.
 
+- [ ] Busiest Time in The Mall [github](Busiest_Time_in_The_Mall/readme.md)  -  [pramp](https://www.pramp.com/question/2WBx3Axln1t7JQ2jQq96)
 
+- [ ] 209. Minimum Size Subarray Sum [github](209_Minimum_Size_Subarray_Sum/readme.md)  -  [leetcode](https://leetcode.com/problems/minimum-size-subarray-sum/#/description)
 
-- [ ] 209. Minimum Size Subarray Sum [gitbub](209_Minimum_Size_Subarray_Sum/readme.md)  -  [leetcode](https://leetcode.com/problems/minimum-size-subarray-sum/#/description)
-
-- [ ] 234. Palindrome Linked List [gitbub](234_Palindrome_Linked_List/readme.md)  -  [leetcode](https://leetcode.com/problems/palindrome-linked-list/#/description)
+- [ ] 234. Palindrome Linked List [github](234_Palindrome_Linked_List/readme.md)  -  [leetcode](https://leetcode.com/problems/palindrome-linked-list/#/description)
 
 - [ ] 532. K-diff Pairs in an Array: + 와 -를 서로 다르게 고려하던지, 아니면 정렬을 하게 되면 +/-를 고려안하는 식으로 생각을 했는데, +만을 고려해도 충분하다는 것을 알았음. 그리고 two pointers를 사용하려면 정렬을 우선 해야함. 정렬하지 않으면 결국에는 O(n^2)이 요구됨.
 
@@ -74,43 +94,43 @@ while inside while vs. for
 
 - [ ] 350. Intersection of Two Arrays II - array를 메모리에서 바로 엑세스 할 수 없을 경우에는 merge sort등을 이용해서 두 행렬을 정렬한 후에 two pointer를 이용해서 액세스하면서 intersection을 찾는다. 그렇지 않으면 헤쉬 테이블을 이용해서 간단하게 해결 가능.
 
-- [x] 29. Divide Two Integers [gitbub](029_Divide_Two_Integers)  -  [leetcode](https://leetcode.com/problems/divide-two-integers/#/description)
+- [x] 29. Divide Two Integers [github](029_Divide_Two_Integers)  -  [leetcode](https://leetcode.com/problems/divide-two-integers/#/description)
 
-- [x] 100. Same Tree [gitbub](100_Same_Tree)  -  [leetcode](https://leetcode.com/problems/same-tree/#/description)
+- [x] 100. Same Tree [github](100_Same_Tree)  -  [leetcode](https://leetcode.com/problems/same-tree/#/description)
 
-- [x] 167. Two Sum II - Input array is sorted [gitbub](167_Two_Sum_II_Input_array_is_sorted/readme.md)  -  [leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/#/description)
+- [x] 167. Two Sum II - Input array is sorted [github](167_Two_Sum_II_Input_array_is_sorted/readme.md)  -  [leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/#/description)
 
-- [ ] 297. Serialize and Deserialize Binary Tree [gitbub](297.Serialize_and_Deserialize_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description)
+- [ ] 297. Serialize and Deserialize Binary Tree [github](297.Serialize_and_Deserialize_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description)
 
-- [ ] 149. Max Points on a Line [gitbub](149.Max_Points_on_a_Line/readme.md)  -  [leetcode](https://leetcode.com/problems/max-points-on-a-line/#/description)
+- [ ] 149. Max Points on a Line [github](149.Max_Points_on_a_Line/readme.md)  -  [leetcode](https://leetcode.com/problems/max-points-on-a-line/#/description)
 
-- [ ] 230. Kth Smallest Element in a BST [gitbub](230.Kth_Smallest_Element_in_a_BST/readme.md)  -  [leetcode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/#/description)
+- [ ] 230. Kth Smallest Element in a BST [github](230.Kth_Smallest_Element_in_a_BST/readme.md)  -  [leetcode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/#/description)
 
-- [ ] 322. Coin Change [gitbub](322.Coin_Change/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
+- [ ] 322. Coin Change [github](322.Coin_Change/readme.md)  -  [leetcode](https://leetcode.com/problems/coin-change/#/description)
 
-- [x] 236. Lowest Common Ancestor of a Binary Tree [gitbub](236.Lowest_Common_Ancestor_of_a_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/#/description)
+- [x] 236. Lowest Common Ancestor of a Binary Tree [github](236.Lowest_Common_Ancestor_of_a_Binary_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/#/description)
 
-- [x] 235. Lowest Common Ancestor of a Binary Search Tree [gitbub](235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/#/description)
+- [x] 235. Lowest Common Ancestor of a Binary Search Tree [github](235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree/readme.md)  -  [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/#/description)
 
 - [x] 445. Add Two Numbers II
-[gitbub](445.Add_Two_Numbers_II/readme.md)  -  [leetcode](https://leetcode.com/problems/add-two-numbers-ii/#/description)
+[github](445.Add_Two_Numbers_II/readme.md)  -  [leetcode](https://leetcode.com/problems/add-two-numbers-ii/#/description)
 
 - [ ] meeting-rooms
 
 - [x] 56. Merge Intervals
-[gitbub](056.Merge_Intervals/readme.md)  -  [leetcode](https://leetcode.com/problems/merge-intervals/#/description)
+[github](056.Merge_Intervals/readme.md)  -  [leetcode](https://leetcode.com/problems/merge-intervals/#/description)
 
 - [x] 152. Maximum Product Subarray
-[gitbub](152.Maximum_Product_Subarray/readme.md)  -  [leetcode](https://leetcode.com/problems/maximum-product-subarray/#/description)
+[github](152.Maximum_Product_Subarray/readme.md)  -  [leetcode](https://leetcode.com/problems/maximum-product-subarray/#/description)
 
 - [x] 53. Maximum Subarray
-[gitbub](053.Maximum_Subarray/readme.md)  -  [leetcode](https://leetcode.com/problems/maximum-subarray/#/description)
+[github](053.Maximum_Subarray/readme.md)  -  [leetcode](https://leetcode.com/problems/maximum-subarray/#/description)
 
 - [x] 283. Move Zeroes
-[gitbub](283.Move_Zeroes/readme.md)  -  [leetcode](https://leetcode.com/problems/move-zeroes/#/description)
+[github](283.Move_Zeroes/readme.md)  -  [leetcode](https://leetcode.com/problems/move-zeroes/#/description)
 
 - [x] 14. Longest Common Prefix
-[gitbub](014.Longest_Common_Prefix/readme.md)  -  [leetcode](https://leetcode.com/problems/longest-common-prefix/#/description)
+[github](014.Longest_Common_Prefix/readme.md)  -  [leetcode](https://leetcode.com/problems/longest-common-prefix/#/description)
 
 - [x] 3. Longest Substring Without Repeating Characters
-[gitbub](003.Longest_Substring_Without_Repeating_Characters/readme.md)  -  [leetcode](https://leetcode.com/problems/longest-substring-without-repeating-characters/#/description)
+[github](003.Longest_Substring_Without_Repeating_Characters/readme.md)  -  [leetcode](https://leetcode.com/problems/longest-substring-without-repeating-characters/#/description)

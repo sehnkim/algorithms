@@ -29,6 +29,14 @@ operator [] |             | xxx         | O(1)      |
 swap        |             | xxx         | O(1)      |
 c_str       |             | xxx         | O(1)      |
 data        |             | xxx         | O(1)      |
+resize      |             | xxx         | O(1)      |
+
+vector  | -
+- | -
+push_back |
+pop_front |
+resize |
+reserver |
 
 * string::find: KMP - O(m+n), but for std, it is not using KMP 아마도 메모리 할당, 그로인한 시간 낭비, 보통의 경우 partial match가 많이 없고, 문자의 길이가 그렇게 길지 않기 때문.
 * 하나의 문자에 대해서는 O(n) since m=1.
